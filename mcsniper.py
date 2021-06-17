@@ -67,7 +67,7 @@ while s == False:
                 print('AVAILABLE NOW')
                 a = True #closes loop
                 #requests to change name through api
-                #change = requests.put(link+name,headers=heads)
+                change = requests.put(link+name,headers=heads)
                 print('STATUS CODE [' + str(change.status_code) + ']')
                 #results -- read prints for description of status codes
                 if change.status_code == 200:
