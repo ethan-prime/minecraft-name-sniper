@@ -14,10 +14,6 @@ for line in userdata:
 email = info[0].split(':')[1].replace('\n','')
 password = info[1].split(':')[1]
 
-print(info)
-print(email)
-print(password)
-
 payload = {
     'username': email,   
     'password': password    
